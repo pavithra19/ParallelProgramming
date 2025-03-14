@@ -25,12 +25,12 @@ The `openmp` directory contains the following files:
 ## Usage
 To compile and run the MPI programs, use the following commands:
 ```sh
-mpicc cannon_algorithm_taskA.c -o taskA
-mpirun -np 4 ./taskA
+mpicc cannon_algorithm_taskA.c -o cannon_algorithm_taskA
+mpirun -np 4 ./cannon_algorithm_taskA
 ```
 
 To compile and run the OpenMP programs, use the following commands:
 ```sh
-gcc -fopenmp array_sum_parallel.c -o parallel_sum
-./parallel_sum
+gcc -fopenmp array_sum_parallel.c -o array_sum_parallel
+./array_sum_parallel
 ```
